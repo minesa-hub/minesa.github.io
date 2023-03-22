@@ -1,0 +1,126 @@
+/* Hubot Sans */
+@font-face {
+  font-family: "Hubot-Sans";
+  src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
+}
+
+/* Mona Sans */
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
+}
+
+/* Variables */
+:root {
+  --red-color: rgb(255, 122, 113);
+  --orange-color: rgb(255, 166, 87);
+  --gray-color: rgb(75, 85, 99);
+  --dimmed-background: rgb(30, 30, 30);
+
+  --hubot-font: "Hubot-Sans";
+  --mona-font: "Mona-Sans"
+}
+
+/* Apply on everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------- */
+
+/* ________________ TAGS ________________ */
+
+/* -------------------------------------- */
+
+/* Header · The piece of logo and navigation items */
+header {
+  padding: 1em;
+  /* 16px */
+}
+
+/* Navigation Bar · The links on the navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: var(--gray-color);
+  opacity: 0.8;
+}
+
+/* Span Texts · To have good appearance adding some space between icon and text */
+span {
+  margin-left: 0.3em;
+  margin-right: 0.6em;
+}
+
+/* Links · Using parent's attributes with inherit value */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* (Links & Spans):hover · When it's on hover, it'll be underlining the link & text */
+a:hover,
+span:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------- */
+
+/* _________________ ID _________________ */
+
+/* -------------------------------------- */
+
+/* The gradient on the top of the screen */
+#gradient-background {
+  height: 5px;
+  max-width: 1200px;
+
+  background: linear-gradient(to right, var(--red-color), var(--orange-color));
+}
+
+/* Logo · Logo's container */
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Link · Logo link */
+#logo-link {
+  display: inline-block;
+
+  border-radius: 624.9375em;
+  /* 9999px */
+}
+
+/* Header Logo · The icon of Minesa Hub */
+#logo-image {
+  margin-right: auto;
+
+  height: 3.125em;
+  /* 50px */
+  width: 3.125em;
+  /* 50px */
+}
+
+/* -------------------------------------- */
+
+/* _______________ CLASS ________________ */
+
+/* -------------------------------------- */
+
+/* Relative · To make elements inside div relatively move */
+.relative {
+  display: relative;
+}
+
+/* Nav Items · To rule all navigation items */
+.nav-items {
+  display: flex;
+  align-items: center;
+  font-family: var(--hubot-font);
+}
