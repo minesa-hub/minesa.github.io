@@ -1,31 +1,32 @@
 /* Hubot Sans */
 @font-face {
-  font-family: "Hubot-Sans";
-  src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
+    font-family: "Hubot-Sans";
+    src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
 }
 
 /* Mona Sans */
 @font-face {
-  font-family: "Mona-Sans";
-  src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
+    font-family: "Mona-Sans";
+    src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
 }
 
 /* Variables */
 :root {
-  --red-color: rgb(255, 122, 113);
-  --orange-color: rgb(255, 166, 87);
-  --gray-color: rgb(75, 85, 99);
-  --dimmed-background: rgb(30, 30, 30);
+    --red-color: rgb(255, 122, 113);
+    --orange-color: rgb(255, 166, 87);
+    --purple-color: #9867f0;
+    --gray-color: rgb(75, 85, 99);
+    --dimmed-background: rgb(30, 30, 30);
 
-  --hubot-font: "Hubot-Sans";
-  --mona-font: "Mona-Sans"
+    --hubot-font: "Hubot-Sans";
+    --mona-font: "Mona-Sans"
 }
 
 /* Apply on everything */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* -------------------------------------- */
@@ -36,36 +37,40 @@
 
 /* Header · The piece of logo and navigation items */
 header {
-  padding: 1em;
-  /* 16px */
+    padding: 1em;
+    /* 16px */
 }
 
 /* Navigation Bar · The links on the navigation bar */
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  color: var(--gray-color);
-  opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: var(--gray-color);
+    opacity: 0.8;
 }
 
 /* Span Texts · To have good appearance adding some space between icon and text */
 span {
-  margin-left: 0.3em;
-  margin-right: 0.6em;
+    margin-left: 0.3em;
+    margin-right: 0.6em;
 }
 
 /* Links · Using parent's attributes with inherit value */
 a {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 /* (Links & Spans):hover · When it's on hover, it'll be underlining the link & text */
 a:hover,
 span:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+main {
+    
 }
 
 /* -------------------------------------- */
@@ -76,35 +81,86 @@ span:hover {
 
 /* The gradient on the top of the screen */
 #gradient-background {
-  height: 5px;
-  max-width: 1200px;
+    height: 5px;
+    max-width: 1200px;
 
-  background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    background: linear-gradient(to right, var(--red-color), var(--orange-color));
 }
 
 /* Logo · Logo's container */
 #logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Logo Link · Logo link */
 #logo-link {
-  display: inline-block;
+    display: inline-block;
 
-  border-radius: 624.9375em;
-  /* 9999px */
+    border-radius: 624.9375em;
+    /* 9999px */
 }
 
 /* Header Logo · The icon of Minesa Hub */
 #logo-image {
-  margin-right: auto;
+    margin-right: auto;
 
-  height: 3.125em;
-  /* 50px */
-  width: 3.125em;
-  /* 50px */
+    height: 3.125em;
+    /* 50px */
+    width: 3.125em;
+    /* 50px */
+}
+
+/* Badge Container · Container of badge */
+#badge-container {
+    height: 6.25em;
+    /* 100px */
+    max-width: 12.5em;
+    /* 200px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge · The badge shows my skills */
+#badge {
+    position: relative;
+    top: 10px;
+    right: -155%;
+    padding: 4px 16px;
+    border: none;
+    outline: none;
+    z-index: 1;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+}
+
+/* Badge::before */
+#badge::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 25px;
+    background-color: white;
+    z-index: -1;
+    transition: 200ms;
+}
+
+/* Badge::after */
+#badge::after {
+    content: attr(data);
+    font-size: 0.9em;
+    font-weight: 700;
+    line-height: 1.25em;
+    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
 }
 
 /* -------------------------------------- */
@@ -115,12 +171,25 @@ span:hover {
 
 /* Relative · To make elements inside div relatively move */
 .relative {
-  display: relative;
+    display: relative;
 }
 
 /* Nav Items · To rule all navigation items */
 .nav-items {
-  display: flex;
-  align-items: center;
-  font-family: var(--hubot-font);
+    display: flex;
+    align-items: center;
+    font-family: var(--hubot-font);
+}
+
+/* -------------------------------------- */
+
+/* ______________ OTHERS ________________ */
+
+/* -------------------------------------- */
+
+/* Adding @media for responsive web page */
+@media (max-width: 700px) {
+    #badge {
+        right: -45%;
+    }
 }
