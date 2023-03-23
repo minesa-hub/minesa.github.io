@@ -14,7 +14,7 @@
 :root {
     --red-color: rgb(255, 122, 113);
     --orange-color: rgb(255, 166, 87);
-    --purple-color: #9867f0;
+    --purple-color: rgb(152, 103, 240);
     --gray-color: rgb(75, 85, 99);
     --dimmed-background: rgb(30, 30, 30);
 
@@ -127,13 +127,13 @@ main {
 /* Badge · The badge shows my skills */
 #badge {
     position: relative;
-    top: 10px;
+    top: 0.625em;
     right: -155%;
-    padding: 4px 16px;
+    padding: 0.25em 1em;
     border: none;
     outline: none;
     z-index: 1;
-    border-radius: 25px;
+    border-radius: 1.5625em; /* 25px */
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
 }
 
@@ -141,11 +141,11 @@ main {
 #badge::before {
     content: "";
     position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    border-radius: 25px;
+    left: 0.0625em;
+    right: 0.0625em;
+    top: 0.0625em;
+    bottom: 0.0625em;
+    border-radius: 1.5625em;
     background-color: white;
     z-index: -1;
     transition: 200ms;
@@ -155,7 +155,7 @@ main {
 #badge::after {
     content: attr(data);
     font-size: 0.9em;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1.25em;
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
     -webkit-background-clip: text;
