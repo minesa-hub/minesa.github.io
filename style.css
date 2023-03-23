@@ -26,6 +26,7 @@
 * {
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
 }
 
@@ -34,6 +35,10 @@
 /* ________________ TAGS ________________ */
 
 /* -------------------------------------- */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
 
 /* Header · The piece of logo and navigation items */
 header {
@@ -46,7 +51,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    
     margin-left: auto;
+    
     color: var(--gray-color);
     opacity: 0.8;
 }
@@ -69,8 +76,37 @@ span:hover {
     text-decoration: underline;
 }
 
+/* Main · The hero of the page */
 main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    margin-top: 3em;
+}
+
+/* Article · The article text about me */
+article {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
     
+    max-width: 48rem;
+    
+    padding-bottom: 6em
+}
+
+/* HR · The horizontal line */
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+    z-index: 0; 
+    border-color: rgba(209, 213, 219, 0.4);
 }
 
 /* -------------------------------------- */
@@ -97,9 +133,6 @@ main {
 /* Logo Link · Logo link */
 #logo-link {
     display: inline-block;
-
-    border-radius: 624.9375em;
-    /* 9999px */
 }
 
 /* Header Logo · The icon of Minesa Hub */
@@ -127,40 +160,85 @@ main {
 /* Badge · The badge shows my skills */
 #badge {
     position: relative;
-    top: 10px;
-    right: -155%;
-    padding: 4px 16px;
+    padding: .4em 1em;
     border: none;
     outline: none;
-    z-index: 1;
     border-radius: 25px;
+    
+    top: -1.8em;
+    
+    z-index: 1;
+    
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
 }
 
 /* Badge::before */
 #badge::before {
     content: "";
+    
     position: absolute;
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
+    
+    left: 0.0625em;
+    right: 0.0625em;
+    top: 0.0625em;
+    bottom: 0.0625em;
+    
     border-radius: 25px;
+    
     background-color: white;
+    
     z-index: -1;
-    transition: 200ms;
 }
 
 /* Badge::after */
 #badge::after {
     content: attr(data);
-    font-size: 0.9em;
+    
+    font-size: 1.1em;
     font-weight: 700;
     line-height: 1.25em;
+    
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
     -webkit-background-clip: text;
     color: transparent;
-    transition: 200ms;
+}
+
+/* Neo Image · Image of myself, for editing it */
+#neo-img {
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    border: 0.0313em solid var(--dimmed-background);
+
+    height: 9.375em;
+    width: 9.375em;
+    filter: grayscale(.7);
+}
+
+/* Neo Text Container · A div for my username */
+#neo-text-container {
+    margin-top: 1em;
+}
+
+/* Neo Text · The text displays my username  */
+#neo-text {
+    font-size: 1.8em;
+    line-height: 2.25em;
+    
+    font-family: var(--mona-font);
+    letter-spacing: -0.0025em;
+    font-weight: bold;
+}
+
+/* Task Text · The text shows off my role */
+#task-text {
+    font-family: var(--mona-font);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.25em;
 }
 
 /* -------------------------------------- */
@@ -178,7 +256,28 @@ main {
 .nav-items {
     display: flex;
     align-items: center;
+    
     font-family: var(--hubot-font);
+}
+
+/* Rounded Corners · For radius */
+.rounded-full {
+    border-radius: 624.9375em;
+    /* 9999px */
+}
+
+/* Task & Link Containers · Container of the h2 element and the links */
+.connection-container {
+    display: inline-flex;
+    
+    margin-top: 0.5em;
+}
+
+.connection-items {
+    display: inline; 
+    vertical-align: middle;
+    
+    font-family: var(--mona-font);
 }
 
 /* -------------------------------------- */
@@ -187,9 +286,4 @@ main {
 
 /* -------------------------------------- */
 
-/* Adding @media for responsive web page */
-@media (max-width: 700px) {
-    #badge {
-        right: -45%;
-    }
-}
+/* Nothing to show now. */
