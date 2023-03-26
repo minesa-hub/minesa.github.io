@@ -1,120 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Title of the page -->
     <title>Neo-folio</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Script -->
     <script src="main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Creating gradient on top -->
     <div id="gradient-background"></div>
 
     <!-- Creating layout -->
     <div class="relative">
-        <!-- Header • The logo & Navs-->
-        <header>
-            <!-- Logo -->
-            <div id="logo">
-                <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
-                    <img id="logo-image" src="./assets/images/minesa-hub.png" alt="Minesa Hub's logo" />
-                </a>
+      <!-- Header • The logo & Navs-->
+      <header>
+        <!-- Logo -->
+        <div id="logo">
+          <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
+            <img
+              id="logo-image"
+              src="./assets/images/minesa-hub.png"
+              alt="Minesa Hub's logo"
+            />
+          </a>
 
-                <!-- Navigations -->
-                <nav>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/neodevils_" target="_blank" class="nav-items">
-                        <img src="./assets/icons/twitter.svg" alt="Twitter">
-                        <span>Twitter</span>
-                    </a>
+          <!-- Navigations -->
+          <nav>
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com/neodevils_"
+              target="_blank"
+              class="nav-items"
+            >
+              <img src="./assets/icons/twitter.svg" alt="Twitter" />
+              <span>Twitter</span>
+            </a>
 
-                    <!-- Discord -->
-                    <a href="https://discord.gg/Q8aTPfeNra" target="_blank" class="nav-items">
-                        <img src="./assets/icons/discord.svg" alt="Discord">
-                        <span>Discord</span>
-                    </a>
-                </nav>
+            <!-- Discord -->
+            <a
+              href="https://discord.gg/Q8aTPfeNra"
+              target="_blank"
+              class="nav-items"
+            >
+              <img src="./assets/icons/discord.svg" alt="Discord" />
+              <span>Discord</span>
+            </a>
+          </nav>
+        </div>
+      </header>
 
+      <!-- Hero of the page -->
+      <main>
+        <!-- Badge container -->
+        <div id="badge-container">
+          <strong id="badge" data="Designer · Developer"></strong>
+        </div>
+        <!-- Hero image's container -->
+        <div class="rounded-full">
+          <!-- My picture -->
+          <img
+            id="neo-img"
+            loading="lazy"
+            src="./assets/images/neo.jpg"
+            alt="Neo"
+          />
+        </div>
+
+        <!-- This is container for my username -->
+        <div id="neo-text-container">
+          <h1 id="neo-text">Neo</h1>
+        </div>
+
+        <!-- This task I have -->
+        <div id="main-other-container">
+          <h2 id="task-text">Community Manager</h2>
+        </div>
+
+        <!-- Connections -->
+        <div class="connection-container">
+          <!-- Github -->
+          <div>
+            <a
+              href="https://github.com"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./assets/icons/github.svg"
+                alt="Github"
+                class="connection-items"
+              />
+              <span class="connection-items">neodevils</span>
+            </a>
+          </div>
+
+          <!-- Twitter -->
+          <div>
+            <a
+              href="https://twitter.com/neodevils_"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./assets/icons/twitter-blue.svg"
+                alt="Twitter"
+                class="connection-items"
+              />
+              <span class="connection-items">@neodevils_</span>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- The article & Sections -->
+      <article>
+        <!-- Horizontal line -->
+        <div class="relative">
+          <hr />
+        </div>
+
+        <div>
+          <div id="button-container">
+            <button class="article-buttons">About</button>
+            <button class="article-buttons">Projects</button>
+            <button class="article-buttons">Paper</button>
+          </div>
+
+          <div class="article-text-container">
+            <div class="article-item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aperiam nesciunt sapiente quibusdam facilis nostrum illo
+                cupiditate, voluptates quo. Atque recusandae nostrum illo
+                voluptatibus totam aperiam quos explicabo at itaque voluptate!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem ut deserunt nobis quidem, perspiciatis itaque
+                magnam! Ullam corporis qui ab expedita labore harum, cupiditate
+                officiis voluptas, molestiae, modi possimus aliquid.
+              </p>
             </div>
-        </header>
-
-
-
-        <!-- Hero of the page -->
-        <main>
-            <!-- Badge container -->
-            <div id="badge-container">
-                <strong id="badge" data="Designer · Developer"></strong>
-            </div>
-            <!-- Hero image's container -->
-            <div class="rounded-full">
-                <!-- My picture -->
-                <img id="neo-img" loading="lazy" src="./assets/images/neo.jpg" alt="Neo">
-            </div>
-
-            <!-- This is container for my username -->
-            <div id="neo-text-container">
-                <h1 id="neo-text">Neo</h1>
-            </div>
-
-            <!-- This task I have -->
-            <div id="main-other-container">
-                <h2 id="task-text">Community Manager</h2>
-            </div>
-
-            <!-- Connections -->
-            <div class="connection-container">
-                <!-- Github -->
-                <div>
-                    <a href="https://github.com" target="_blank" style="text-decoration: none;">
-                        <img src="./assets/icons/Github.svg" alt="Github" class="connection-items">
-                        <span class="connection-items">neodevils</span>
-                    </a>
-                </div>
-
-                <!-- Twitter -->
-                <div>
-                    <a href="https://twitter.com/neodevils_" target="_blank" style="text-decoration: none;">
-                        <img src="./assets/icons/twitter-blue.svg" alt="Twitter" class="connection-items">
-                        <span class="connection-items">@neodevils_</span>
-                    </a>
-                </div>
-            </div>
-        </main>
-
-        <!-- The article & Sections -->
-        <article>
-            <!-- Horizontal line -->
-            <div class="relative">
-                <hr>
-            </div>
-
-            <div>
-                <div id="button-container">
-                    <button class="article-buttons">About</button>
-                    <button class="article-buttons">Projects</button>
-                    <button class="article-buttons">Paper</button>
-                </div>
-                
-                <div class="article-text-container">
-                    <div class="article-item">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nesciunt sapiente quibusdam facilis nostrum illo cupiditate, voluptates quo. Atque recusandae nostrum illo voluptatibus totam aperiam quos explicabo at itaque voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ut deserunt nobis quidem, perspiciatis itaque magnam! Ullam corporis qui ab expedita labore harum, cupiditate officiis voluptas, molestiae, modi possimus aliquid.</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
+          </div>
+        </div>
+      </article>
     </div>
-</body>
-
+  </body>
 </html>

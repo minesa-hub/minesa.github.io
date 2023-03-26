@@ -1,33 +1,33 @@
 /* Hubot Sans */
 @font-face {
-    font-family: "Hubot-Sans";
-    src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
+  font-family: "Hubot-Sans";
+  src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
 }
 
 /* Mona Sans */
 @font-face {
-    font-family: "Mona-Sans";
-    src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
+  font-family: "Mona-Sans";
+  src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
 }
 
 /* Variables */
 :root {
-    --red-color: rgb(237, 78, 80);
-    --orange-color: rgb(252, 139, 88);
-    --purple-color: rgb(152, 103, 240);
-    --gray-color: rgb(75, 85, 99);
-    --dimmed-background: rgb(30, 30, 30);
+  --red-color: rgb(237, 78, 80);
+  --orange-color: rgb(252, 139, 88);
+  --purple-color: rgb(152, 103, 240);
+  --gray-color: rgb(75, 85, 99);
+  --dimmed-background: rgb(30, 30, 30);
 
-    --hubot-font: "Hubot-Sans";
-    --mona-font: "Mona-Sans"
+  --hubot-font: "Hubot-Sans";
+  --mona-font: "Mona-Sans";
 }
 
 /* Apply on everything */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* -------------------------------------- */
@@ -37,76 +37,76 @@
 /* -------------------------------------- */
 
 body {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Header · The piece of logo and navigation items */
 header {
-    padding: 1em;
-    /* 16px */
+  padding: 1em;
+  /* 16px */
 }
 
 /* Navigation Bar · The links on the navigation bar */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-left: auto;
+  margin-left: auto;
 
-    color: var(--gray-color);
-    opacity: 0.8;
+  color: var(--gray-color);
+  opacity: 0.8;
 }
 
 /* Span Texts · To have good appearance adding some space between icon and text */
 span {
-    margin-left: 0.3em;
-    margin-right: 0.6em;
+  margin-left: 0.3em;
+  margin-right: 0.6em;
 }
 
 /* Links · Using parent's attributes with inherit value */
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /* (Links & Spans):hover · When it's on hover, it'll be underlining the link & text */
 a:hover,
 span:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Main · The hero of the page */
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 /* Article · The article text about me */
 article {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 
-    max-width: 48rem;
+  max-width: 48rem;
 
-    padding-bottom: 6em
+  padding-bottom: 6em;
 }
 
 /* HR · The horizontal line */
 hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
-    z-index: 0;
-    border-color: rgba(209, 213, 219, 0.4);
+  z-index: 0;
+  border-color: rgba(209, 213, 219, 0.4);
 }
 
 /* -------------------------------------- */
@@ -117,139 +117,140 @@ hr {
 
 /* The gradient on the top of the screen */
 #gradient-background {
-    height: 5px;
-    max-width: 1200px;
+  height: 5px;
+  max-width: 100%;
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
+  background: linear-gradient(to right, var(--orange-color), var(--red-color));
 }
 
 /* Logo · Logo's container */
 #logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Logo Link · Logo link */
 #logo-link {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Header Logo · The icon of Minesa Hub */
 #logo-image {
-    margin-right: auto;
+  margin-right: auto;
 
-    height: 3.125em;
-    /* 50px */
-    width: 3.125em;
-    /* 50px */
+  height: 3.125em;
+  /* 50px */
+  width: 3.125em;
+  /* 50px */
 }
 
 /* Badge Container · Container of badge */
 #badge-container {
-    height: 6.25em;
-    /* 100px */
-    max-width: 12.5em;
-    /* 200px */
+  height: 6.25em;
+  /* 100px */
+  max-width: 12.5em;
+  /* 200px */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Badge · The badge shows my skills */
 #badge {
-    position: relative;
-    padding: .4em 1em;
-    border: none;
-    outline: none;
-    border-radius: 25px;
+  position: relative;
+  padding: 0.4em 1em;
+  border: none;
+  outline: none;
+  border-radius: 25px;
 
-    top: -1.8em;
+  top: -1.8em;
 
-    z-index: 1;
+  z-index: 1;
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
+  background: linear-gradient(to right, var(--orange-color), var(--red-color));
 }
 
 /* Badge::before */
 #badge::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: 0.0625em;
-    right: 0.0625em;
-    top: 0.0625em;
-    bottom: 0.0625em;
+  left: 0.0625em;
+  right: 0.0625em;
+  top: 0.0625em;
+  bottom: 0.0625em;
 
-    border-radius: 25px;
+  border-radius: 25px;
 
-    background-color: white;
+  background-color: white;
 
-    z-index: -1;
+  z-index: -1;
 }
 
 /* Badge::after */
 #badge::after {
-    content: attr(data);
+  content: attr(data);
 
-    font-size: 0.8em;
-    font-weight: 600;
-    line-height: 1em;
-    font-family: var(--hubot-font);
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1em;
+  font-family: var(--hubot-font);
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, var(--orange-color), var(--red-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* Neo Image · Image of myself, for editing it */
 #neo-img {
-    overflow-x: hidden;
-    overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
-    flex-shrink: 0;
+  flex-shrink: 0;
 
-    border-radius: 50%;
-    border: 0.0313em solid var(--dimmed-background);
+  border-radius: 50%;
+  border: 0.0313em solid var(--dimmed-background);
 
-    height: 9.375em;
-    width: 9.375em;
-    filter: grayscale(.7);
+  height: 9.375em;
+  width: 9.375em;
+  filter: grayscale(0.7);
 }
 
 /* Neo Text Container · A div for my username */
 #neo-text-container {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 /* Neo Text · The text displays my username  */
 #neo-text {
-    font-size: 1.8em;
-    line-height: 2.25em;
+  font-size: 1.8em;
+  line-height: 2.25em;
 
-    font-family: var(--mona-font);
-    letter-spacing: -0.0025em;
-    font-weight: bold;
+  font-family: var(--mona-font);
+  letter-spacing: -0.0025em;
+  font-weight: bold;
 }
 
 /* Task Text · The text shows off my role */
 #task-text {
-    font-family: var(--mona-font);
-    font-weight: 300;
-    font-size: 1.8em;
-    line-height: 1.25em;
+  font-family: var(--mona-font);
+  font-weight: 300;
+  font-size: 1.8em;
+  line-height: 1.25em;
 }
 
 #button-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    column-gap: 0.75em;
-    row-gap: 0.75em;
+  column-gap: 0.75em;
+  row-gap: 0.75em;
 }
 
 /* -------------------------------------- */
@@ -260,61 +261,61 @@ hr {
 
 /* Relative · To make elements inside div relatively move */
 .relative {
-    display: relative;
+  display: relative;
 }
 
 /* Nav Items · To rule all navigation items */
 .nav-items {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    font-family: var(--hubot-font);
+  font-family: var(--hubot-font);
 }
 
 /* Rounded Corners · For radius */
 .rounded-full {
-    border-radius: 624.9375em;
-    /* 9999px */
+  border-radius: 624.9375em;
+  /* 9999px */
 }
 
 /* Task & Link Containers · Container of the h2 element and the links */
 .connection-container {
-    display: inline-flex;
+  display: inline-flex;
 
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .connection-items {
-    display: inline;
-    vertical-align: middle;
+  display: inline;
+  vertical-align: middle;
 
-    font-family: var(--mona-font);
+  font-family: var(--mona-font);
 }
 
 .article-buttons {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    
-    font-family: var(--hubot-font);
-    font-size: 0.9em;
-    line-height: 1.25em;
-    font-weight: 500;
-    
-    cursor: pointer;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 
-    border-radius: 624.9375em;
-    /* 9999px */
-    border: 1px solid rgb(0, 0, 10);
+  font-family: var(--hubot-font);
+  font-size: 0.9em;
+  line-height: 1.25em;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  border-radius: 624.9375em;
+  /* 9999px */
+  border: 1px solid rgb(0, 0, 10);
 }
 
 .article-item {
-    margin-top: 1em;
-    width: 100%;
-    max-width: 65ch;
-    
-    color: rgb(55, 65, 81);
+  margin-top: 1em;
+  width: 100%;
+  max-width: 65ch;
+
+  color: rgb(55, 65, 81);
 }
 
 /* -------------------------------------- */
