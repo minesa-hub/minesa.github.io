@@ -120,7 +120,7 @@ hr {
     height: 5px;
     max-width: 1200px;
 
-    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    background: linear-gradient(to right, var(--orange-color), var(--red-color));
 }
 
 /* Logo · Logo's container */
@@ -169,7 +169,7 @@ hr {
 
     z-index: 1;
 
-    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    background: linear-gradient(to right, var(--orange-color), var(--red-color));
 }
 
 /* Badge::before */
@@ -199,7 +199,7 @@ hr {
     line-height: 1em;
     font-family: var(--hubot-font);
 
-    background: linear-gradient(to right, var(--red-color), var(--orange-color));
+    background: linear-gradient(to right, var(--orange-color), var(--red-color));
     -webkit-background-clip: text;
     color: transparent;
 }
