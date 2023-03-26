@@ -12,9 +12,9 @@
 
 /* Variables */
 :root {
-    --red-color: rgb(255, 122, 113);
-    --orange-color: rgb(255, 166, 87);
-    --purple-color: #9867f0;
+    --red-color: rgb(237, 78, 80);
+    --orange-color: rgb(252, 139, 88);
+    --purple-color: rgb(152, 103, 240);
     --gray-color: rgb(75, 85, 99);
     --dimmed-background: rgb(30, 30, 30);
 
@@ -26,7 +26,7 @@
 * {
     margin: 0;
     padding: 0;
-    
+
     box-sizing: border-box;
 }
 
@@ -51,9 +51,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     margin-left: auto;
-    
+
     color: var(--gray-color);
     opacity: 0.8;
 }
@@ -94,9 +94,9 @@ article {
     margin-right: auto;
     padding-left: 1.25em;
     padding-right: 1.25em;
-    
+
     max-width: 48rem;
-    
+
     padding-bottom: 6em
 }
 
@@ -104,8 +104,8 @@ article {
 hr {
     margin-top: 2em;
     margin-bottom: 2em;
-    
-    z-index: 0; 
+
+    z-index: 0;
     border-color: rgba(209, 213, 219, 0.4);
 }
 
@@ -164,40 +164,41 @@ hr {
     border: none;
     outline: none;
     border-radius: 25px;
-    
+
     top: -1.8em;
-    
+
     z-index: 1;
-    
+
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
 }
 
 /* Badge::before */
 #badge::before {
     content: "";
-    
+
     position: absolute;
-    
+
     left: 0.0625em;
     right: 0.0625em;
     top: 0.0625em;
     bottom: 0.0625em;
-    
+
     border-radius: 25px;
-    
+
     background-color: white;
-    
+
     z-index: -1;
 }
 
 /* Badge::after */
 #badge::after {
     content: attr(data);
-    
-    font-size: 1.1em;
-    font-weight: 700;
-    line-height: 1.25em;
-    
+
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1em;
+    font-family: var(--hubot-font);
+
     background: linear-gradient(to right, var(--red-color), var(--orange-color));
     -webkit-background-clip: text;
     color: transparent;
@@ -227,7 +228,7 @@ hr {
 #neo-text {
     font-size: 1.8em;
     line-height: 2.25em;
-    
+
     font-family: var(--mona-font);
     letter-spacing: -0.0025em;
     font-weight: bold;
@@ -239,6 +240,16 @@ hr {
     font-weight: 300;
     font-size: 1.8em;
     line-height: 1.25em;
+}
+
+#button-container {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    column-gap: 0.75em;
+    row-gap: 0.75em;
 }
 
 /* -------------------------------------- */
@@ -256,7 +267,7 @@ hr {
 .nav-items {
     display: flex;
     align-items: center;
-    
+
     font-family: var(--hubot-font);
 }
 
@@ -269,15 +280,41 @@ hr {
 /* Task & Link Containers · Container of the h2 element and the links */
 .connection-container {
     display: inline-flex;
-    
+
     margin-top: 0.5em;
 }
 
 .connection-items {
-    display: inline; 
+    display: inline;
     vertical-align: middle;
-    
+
     font-family: var(--mona-font);
+}
+
+.article-buttons {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+    font-family: var(--hubot-font);
+    font-size: 0.9em;
+    line-height: 1.25em;
+    font-weight: 500;
+    
+    cursor: pointer;
+
+    border-radius: 624.9375em;
+    /* 9999px */
+    border: 1px solid rgb(0, 0, 10);
+}
+
+.article-item {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 65ch;
+    
+    color: rgb(55, 65, 81);
 }
 
 /* -------------------------------------- */
