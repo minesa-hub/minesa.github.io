@@ -19,6 +19,12 @@
     <!-- Creating gradient on top -->
     <div id="gradient-background"></div>
 
+    <div class="blob-container">
+      <img class="blob" id="blob-1" src="./assets/icons/blob-1.svg" alt="">
+      <img class="blob" id="blob-2" src="./assets/icons/blob-2.svg" alt="">
+      <img class="blob" id="blob-3" src="./assets/icons/blob-3.svg" alt="">
+    </div>
+
     <!-- Creating layout -->
     <div class="relative">
       <!-- Header • The logo & Navs-->
@@ -128,27 +134,41 @@
           <hr />
         </div>
 
-        <div>
-          <div id="button-container">
-            <button class="article-buttons">About</button>
-            <button class="article-buttons">Projects</button>
-            <button class="article-buttons">Paper</button>
-          </div>
+        <div id="button-container">
+          <button
+            class="article-buttons active"
+            onclick="showSection(event, 'about-section')"
+          >
+            About
+          </button>
+          <button
+            class="article-buttons"
+            onclick="showSection(event, 'project-section')"
+          >
+            Projects
+          </button>
+          <button
+            class="article-buttons"
+            onclick="showSection(event, 'paper-section')"
+          >
+            Paper
+          </button>
+        </div>
 
-          <div class="article-text-container">
-            <div class="article-item">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aperiam nesciunt sapiente quibusdam facilis nostrum illo
-                cupiditate, voluptates quo. Atque recusandae nostrum illo
-                voluptatibus totam aperiam quos explicabo at itaque voluptate!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem ut deserunt nobis quidem, perspiciatis itaque
-                magnam! Ullam corporis qui ab expedita labore harum, cupiditate
-                officiis voluptas, molestiae, modi possimus aliquid.
-              </p>
-            </div>
-          </div>
+        <div class="article-item" id="about-section">
+          <p>
+            I have a strong passion for both technology and creativity. As a
+            developer and designer, I am able to merge these two passions to
+            create innovative and functional solutions. I have been coding for
+            almost 3 years and continue to explore new technologies and
+            techniques to further enhance my skills and abilities.
+          </p>
+        </div>
+        <div class="article-item" id="project-section">
+          <p>Projects</p>
+        </div>
+        <div class="article-item" id="paper-section">
+          <p>Paper</p>
         </div>
       </article>
     </div>
