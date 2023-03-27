@@ -1,167 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Title of the page -->
-    <title>Neo-folio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Title of the page -->
+  <title>Neo-folio</title>
 
-    <!-- Script -->
-    <script src="main.js" defer></script>
-  </head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!-- Creating gradient on top -->
-    <div id="gradient-background"></div>
+  <!-- Script -->
+  <script src="main.js" defer></script>
+</head>
 
-    <div class="blob-container">
-      <img class="blob" id="blob-1" src="./assets/icons/blob-1.svg" alt="">
-      <img class="blob" id="blob-2" src="./assets/icons/blob-2.svg" alt="">
-      <img class="blob" id="blob-3" src="./assets/icons/blob-3.svg" alt="">
-    </div>
+<body>
+  <!-- Creating gradient on top -->
+  <div class="gradient-background"></div>
 
-    <!-- Creating layout -->
-    <div class="relative">
-      <!-- Header • The logo & Navs-->
-      <header>
-        <!-- Logo -->
-        <div id="logo">
-          <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
-            <img
-              id="logo-image"
-              src="./assets/images/minesa-hub.png"
-              alt="Minesa Hub's logo"
-            />
+  <div class="blob-container">
+    <img class="blob" id="blob-1" src="./assets/icons/blob-1.svg" alt="">
+    <img class="blob" id="blob-2" src="./assets/icons/blob-2.svg" alt="">
+    <img class="blob" id="blob-3" src="./assets/icons/blob-3.svg" alt="">
+  </div>
+
+  <!-- Creating layout -->
+  <div class="relative">
+    <!-- Header • The logo & Navs-->
+    <header>
+      <!-- Logo -->
+      <div id="logo">
+        <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
+          <img id="logo-image" src="./assets/images/minesa-hub.png" alt="Minesa Hub's logo" />
+        </a>
+
+        <!-- Navigations -->
+        <nav>
+          <!-- Twitter -->
+          <a href="https://twitter.com/neodevils_" target="_blank" class="nav-items">
+            <img src="./assets/icons/twitter.svg" alt="Twitter" />
+            <span>Twitter</span>
           </a>
 
-          <!-- Navigations -->
-          <nav>
-            <!-- Twitter -->
-            <a
-              href="https://twitter.com/neodevils_"
-              target="_blank"
-              class="nav-items"
-            >
-              <img src="./assets/icons/twitter.svg" alt="Twitter" />
-              <span>Twitter</span>
-            </a>
+          <!-- Discord -->
+          <a href="https://discord.gg/Q8aTPfeNra" target="_blank" class="nav-items">
+            <img src="./assets/icons/discord.svg" alt="Discord" />
+            <span>Discord</span>
+          </a>
+        </nav>
+      </div>
+    </header>
 
-            <!-- Discord -->
-            <a
-              href="https://discord.gg/Q8aTPfeNra"
-              target="_blank"
-              class="nav-items"
-            >
-              <img src="./assets/icons/discord.svg" alt="Discord" />
-              <span>Discord</span>
-            </a>
-          </nav>
-        </div>
-      </header>
+    <!-- Hero of the page -->
+    <main>
+      <!-- Badge container -->
+      <div id="badge-container">
+        <strong id="badge" data="Designer · Developer"></strong>
+      </div>
+      <!-- Hero image's container -->
+      <div class="rounded-full">
+        <!-- My picture -->
+        <img id="neo-img" loading="lazy" src="./assets/images/neo.jpeg" alt="Neo" />
+      </div>
 
-      <!-- Hero of the page -->
-      <main>
-        <!-- Badge container -->
-        <div id="badge-container">
-          <strong id="badge" data="Designer · Developer"></strong>
-        </div>
-        <!-- Hero image's container -->
-        <div class="rounded-full">
-          <!-- My picture -->
-          <img
-            id="neo-img"
-            loading="lazy"
-            src="./assets/images/neo.jpg"
-            alt="Neo"
-          />
-        </div>
+      <!-- This is container for my username -->
+      <div id="neo-text-container">
+        <h1 id="neo-text">Neo</h1>
+      </div>
 
-        <!-- This is container for my username -->
-        <div id="neo-text-container">
-          <h1 id="neo-text">Neo</h1>
+      <!-- This task I have -->
+      <div id="main-other-container">
+        <h2 id="task-text">Community Manager</h2>
+      </div>
+
+      <!-- Connections -->
+      <div class="connection-container">
+        <!-- Github -->
+        <div>
+          <a href="https://github.com" target="_blank" style="text-decoration: none">
+            <img src="./assets/icons/github.svg" alt="Github" class="connection-items" />
+            <span class="connection-items">neodevils</span>
+          </a>
         </div>
 
-        <!-- This task I have -->
-        <div id="main-other-container">
-          <h2 id="task-text">Community Manager</h2>
+        <!-- Twitter -->
+        <div>
+          <a href="https://twitter.com/neodevils_" target="_blank" style="text-decoration: none">
+            <img src="./assets/icons/twitter-blue.svg" alt="Twitter" class="connection-items" />
+            <span class="connection-items">@neodevils_</span>
+          </a>
         </div>
+      </div>
+    </main>
 
-        <!-- Connections -->
-        <div class="connection-container">
-          <!-- Github -->
-          <div>
-            <a
-              href="https://github.com"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <img
-                src="./assets/icons/github.svg"
-                alt="Github"
-                class="connection-items"
-              />
-              <span class="connection-items">neodevils</span>
-            </a>
-          </div>
+    <!-- The article & Sections -->
+    <article>
+      <!-- Horizontal line -->
+      <div class="relative">
+        <hr />
+      </div>
 
-          <!-- Twitter -->
-          <div>
-            <a
-              href="https://twitter.com/neodevils_"
-              target="_blank"
-              style="text-decoration: none"
-            >
-              <img
-                src="./assets/icons/twitter-blue.svg"
-                alt="Twitter"
-                class="connection-items"
-              />
-              <span class="connection-items">@neodevils_</span>
-            </a>
-          </div>
-        </div>
-      </main>
+      <!-- Button container -->
+      <div id="button-container">
+        <button class="article-buttons active" onclick="showSection(event, 'about-section')">
+          About
+        </button>
+        <button class="article-buttons" onclick="showSection(event, 'project-section')">
+          Projects
+        </button>
+      </div>
 
-      <!-- The article & Sections -->
-      <article>
-        <!-- Horizontal line -->
-        <div class="relative">
-          <hr />
-        </div>
+      <!-- Article: About -->
+      <div class="article-item" id="about-section">
+        <h1>Hey, It's me! 👋🏻</h1>
+        <p>
+          I'm <strong>Neo</strong> and I'm 21 years old. I love working on projects such as Front-end!
+          <br>
+          <em>
+            I'm also taken by a cutie pie~
+          </em>
+          ❤️
+        </p>
 
-        <div id="button-container">
-          <button
-            class="article-buttons active"
-            onclick="showSection(event, 'about-section')"
-          >
-            About
-          </button>
-          <button
-            class="article-buttons"
-            onclick="showSection(event, 'project-section')"
-          >
-            Projects
-          </button>
-        </div>
+        <h1 class="article-header">Designing && Developing+ 💪🏻</h1>
+        <p>
+          I have a strong passion for both technology and creativity. As a
+          developer and designer, I am able to merge these two passions to
+          create innovative and functional solutions. I have been coding for
+          <strong>almost 3 years</strong> and continue to explore new technologies and
+          techniques to further enhance my skills and abilities.
+        </p>
 
-        <div class="article-item" id="about-section">
+        <h1 class="article-header">I'm also a surveyor! 👷🏻‍♂️</h1>
+        <p>
+          As a surveyor engineer, I work with land and construction projects to ensure accuracy and compliance with legal requirements. I utilize advanced technology and software to collect and analyze data, create maps and plans, and provide expert advice to clients. This role requires a keen attention to detail, problem-solving skills, and the ability to communicate technical information effectively.
+        </p>
+        <br>
+        <ul id="article-ul">
+          <li><strong>Machine:</strong> Leica TS9, TS11 & TS16</li>
+          <li><strong>Experience:</strong> 1 year 3 months</li>
+          <li><strong>Company:</strong> Aga Enerji</li>
+        </ul>
+      </div>
+
+      <!-- Article: Projects -->
+      <div class="article-item" id="project-section">
+        <div class="project-item">
+          <h3 class="project-platform" style="text-decoration: none; color: royalblue;">Discord Bots</h3>
+          <hr style="margin: auto">
+          <h1>Nanase and Ita</h1>
+          <h6 style="color:darkgray;margin-bottom: 0.4em">2021 - 2022</h6>
           <p>
-            I have a strong passion for both technology and creativity. As a
-            developer and designer, I am able to merge these two passions to
-            create innovative and functional solutions. I have been coding for
-            almost 3 years and continue to explore new technologies and
-            techniques to further enhance my skills and abilities.
+            Nanase was my <strong>first</strong> Discord bot and the reason for why I started to learn programming languages. My goals were always to make user <strong>do not</strong> feel strange when using bot commands. It was my first time that I created a bot user-friendly.
+          </p>
+          <br>
+          <p>
+            After a while I coded Ita; the most aesthetic bot ever in the Discord. But sadly because of a mistake by me, she is not a verified bot. 😅
           </p>
         </div>
-        <div class="article-item" id="project-section">
-          <p>Coming soon...</p>
+        <div class="project-item">
+          <h3 class="project-platform" style="text-decoration: none; color: indianred;">Web Project</h3>
+          <hr style="margin: auto">
+          <h1>Web Pages and Portfolios</h1>
+          <h6 style="color:darkgray;margin-bottom: 0.4em">2022 - 2023</h6>
+          <p>
+            This time, I <strong>focused</strong> on learning programming languages—coding public Discord bot was unnecessary.
+          </p>
+          <br>
+          <p>
+            After a while, from back-end to front-end then moved to mobile development. But I didn't have enough tools and time for it, so I couldn't build my own app with <strong>React-Native</strong>. 😔
+          </p>
         </div>
-      </article>
-    </div>
-  </body>
+
+        <div class="project-item">
+          <h1>Want to see my projects? 👀</h1>
+          <p>
+            If you want to check out my projects, don't hesitate to check my
+            <a href="https://github.com/Neodevils?tab=repositories" target="_blank" style="text-decoration: underline;">GitHub repositories
+            </a>.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+    
+    <!-- Gradient for bottom -->
+    <div class="gradient-background" id="footer-gradient"></div>
+  </div>
+
+</body>
+
 </html>

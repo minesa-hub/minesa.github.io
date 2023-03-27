@@ -57,7 +57,7 @@
 /* -------------------------------------- */
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
 }
 
 /* Header · The piece of logo and navigation items */
@@ -137,6 +137,19 @@ hr {
   border-color: rgba(209, 213, 219, 0.4);
 }
 
+footer {
+  margin: auto;
+  height: 0.5em;
+  width: 100%;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  
+  color: var(--gray-color);
+  font-family: var(--hubot-font);
+  
+  background-color: var(--dimmed-background);
+}
+
 /* -------------------------------------- */
 
 /* _________________ ID _________________ */
@@ -144,7 +157,7 @@ hr {
 /* -------------------------------------- */
 
 /* The gradient on the top of the screen */
-#gradient-background {
+.gradient-background {
   height: 0.25em;
   /* 4px */
   max-width: 100%;
@@ -300,7 +313,7 @@ hr {
 }
 
 #project-section,
-#paper-section {
+#pap{
   display: none;
 }
 
@@ -313,17 +326,30 @@ hr {
 
 #blob-2 {
   top: 20em;
-  right: 2em;
+  right: 5em;
 
   animation: blob-animation 3s ease-in-out infinite;
 }
 
 #blob-3 {
   top: 3em;
-  left: 80em;
+  left: 60em;
 
   animation: blob-animation 4s ease-in-out infinite;
 }
+
+#article-ul {
+  margin-left: 0.6em;
+}
+
+#footer-gradient {
+  height: 0.25em;
+  /* 4px */
+  max-width: 100%;
+
+  background: linear-gradient(to right, var(--purple-color), var(--red-color));
+}
+
 /* -------------------------------------- */
 
 /* _______________ CLASS ________________ */
@@ -436,6 +462,41 @@ hr {
   transform: translateX(-50%);
 }
 
+.article-header {
+  margin-top: 0.8em;
+}
+
+.project-item {
+  margin: 1em 0;
+  background-color: var(--dimmed-background);
+  border-radius: 0.4em;
+  padding: 1em;
+  
+  color: rgb(245, 245, 245);
+  
+  transition: 200ms;
+}
+
+.project-item:nth-last-child(1) {
+  border: 1px solid var(--dimmed-background);
+
+  color: var(--dimmed-background);
+  background: linear-gradient(85deg, var(--purple-color), var(--red-color), var(--orange-color));
+  background-size: 200% 200%;
+  
+  animation: project-animation 8s ease infinite;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-platform {
+  padding: 0.1em 0.2em;
+  
+  font-size: 14px;
+}
+
 /* -------------------------------------- */
 
 /* ______________ OTHERS ________________ */
@@ -493,5 +554,17 @@ hr {
     100% {
       transform: translateX(-10%);
     }
+  }
+}
+
+@keyframes project-animation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
