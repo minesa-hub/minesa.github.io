@@ -343,6 +343,8 @@ footer {
 }
 
 #footer-gradient {
+  display: absolute;
+  bottom: 0;
   height: 0.25em;
   /* 4px */
   max-width: 100%;
@@ -382,6 +384,7 @@ footer {
   margin-top: 0.5em;
 }
 
+/* For connection items */
 .connection-items {
   display: inline;
   vertical-align: middle;
@@ -389,6 +392,7 @@ footer {
   font-family: var(--mona-font);
 }
 
+/* article buttons */
 .article-buttons {
   padding-left: 0.75em;
   padding-right: 0.75em;
@@ -409,6 +413,7 @@ footer {
   animation: slide 0.5s ease-in-out;
 }
 
+/* For each article item except the first one */
 .article-item {
   display: none;
 
@@ -423,18 +428,21 @@ footer {
   line-height: 1.7777778;
 }
 
+/* When the button is active */
 .article-buttons.active {
   color: white;
   background-color: black;
   outline: none;
 }
 
+/* On hovering the button */
 .article-buttons:hover {
   background-color: rgba(55, 65, 81, 0.1);
   color: black;
   outline: 4px solid rgba(55, 65, 81, 0.2);
 }
 
+/* When the button is active */
 .article-buttons.active {
   color: white;
   background-color: black;
@@ -443,6 +451,7 @@ footer {
   cursor: default;
 }
 
+/* Blobs' container */
 .blob-container {
   position: absolute;
   top: -20em;
@@ -454,6 +463,7 @@ footer {
   filter: blur(10em);
 }
 
+/* Blobs */
 .blob {
   position: absolute;
 
@@ -462,10 +472,12 @@ footer {
   transform: translateX(-50%);
 }
 
+/* For about's h1 */
 .article-header {
   margin-top: 0.8em;
 }
 
+/* for all project embeds */
 .project-item {
   margin: 1em 0;
   background-color: var(--dimmed-background);
@@ -477,6 +489,7 @@ footer {
   transition: 200ms;
 }
 
+/* For project embed's last child */
 .project-item:nth-last-child(1) {
   border: 1px solid var(--dimmed-background);
 
@@ -487,10 +500,12 @@ footer {
   animation: project-animation 8s ease infinite;
 }
 
+/* When hovering project embed */
 .project-item:hover {
   transform: scale(1.05);
 }
 
+/* Project platforms aka tags */
 .project-platform {
   padding: 0.1em 0.2em;
   
@@ -503,7 +518,7 @@ footer {
 
 /* -------------------------------------- */
 
-
+/* Zooming #neo-image */
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -520,6 +535,7 @@ footer {
   }
 }
 
+/* When page loads, there's a slide effect */
 @keyframes slide {
   from {
     transform: translateY(20%);
@@ -531,6 +547,7 @@ footer {
   }
 }
 
+/* Blob animations */
 @keyframes blob-animation {
   0% {
     transform: translateX(-50%);
@@ -543,6 +560,7 @@ footer {
   }
 }
 
+/* Blob animation for mobile devices */
 @media (max-width: 768px) {
   @keyframes blob-animation {
     0% {
@@ -557,6 +575,7 @@ footer {
   }
 }
 
+/* Animation for last child on project embeds */
 @keyframes project-animation {
   0% {
     background-position: 0 0;
