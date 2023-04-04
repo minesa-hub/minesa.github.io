@@ -209,7 +209,7 @@ footer {
 
   top: -1.8em;
 
-  z-index: 1;
+  z-index: -2;
 
   background: linear-gradient(to right, var(--orange-color), var(--red-color));
 }
@@ -302,7 +302,7 @@ footer {
 /* About Section · The section about me */
 #about-section,
 #project-section,
-#paper-section {
+#experience-section {
   display: flex;
   flex-direction: column;
 
@@ -312,11 +312,13 @@ footer {
   animation: slide 0.5s ease-in-out;
 }
 
+/* Hiding project & experience at the load of page */
 #project-section,
-#pap{
+#experience-section {
   display: none;
 }
 
+/* #1 blob */
 #blob-1 {
   top: 3em;
   left: 50em;
@@ -324,6 +326,7 @@ footer {
   animation: blob-animation 7s ease-in-out infinite;
 }
 
+/* #2 blob */
 #blob-2 {
   top: 20em;
   right: 5em;
@@ -331,6 +334,7 @@ footer {
   animation: blob-animation 3s ease-in-out infinite;
 }
 
+/* #3 blob */
 #blob-3 {
   top: 3em;
   left: 60em;
@@ -338,10 +342,12 @@ footer {
   animation: blob-animation 4s ease-in-out infinite;
 }
 
+/* Article unordered list element */
 #article-ul {
   margin-left: 0.6em;
 }
 
+/* Footer gradient */
 #footer-gradient {
   display: absolute;
   bottom: 0;
@@ -542,7 +548,7 @@ footer {
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
