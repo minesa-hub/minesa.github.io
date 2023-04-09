@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Hubot-Sans";
+    src: url("./assets/fonts/Hubot-Sans.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "Mona-Sans";
+    src: url("./assets/fonts/Mona-Sans.woff2") format("woff");
+}
+
+:root {
+    --red-color: rgb(237, 78, 80);
+    --orange-color: rgb(252, 139, 88);
+    --purple-color: rgb(152, 103, 240);
+    --gray-color: rgb(75, 85, 99);
+    --dimmed-background: rgb(30, 30, 30);
+
+    --hubot-font: "Hubot-Sans";
+    --mona-font: "Mona-Sans";
+}
+
+::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dimmed-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--red-color), var(--orange-color));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--red-color), var(--purple-color));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.relative {
+    display: relative;
+}
+
+#header-gradient {
+    height: 0.25em;
+    background: linear-gradient(to right, var(--orange-color), var(--red-color), var(--purple-color));
+    background-size: 200% 200%;
+    animation: header-animation 3s ease-in-out infinite;
+}
+
+@keyframes header-animation {
+    0% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+header {
+    
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin: auto;
+    height: 4.125em;
+    width: 4.125em;
+    filter: opacity(0.9)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+main h1 {
+    display: flex;
+    color: black;
+    font-family: var(--hubot-font);
+    font-size: 4em;
+    line-height: 1em;
+    background: linear-gradient(75deg, var(--purple-color), var(--red-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+main h2 {
+    display: flex;
+    color: black;
+    font-family: var(--mona-font);
+    padding-top: .5em;
+    font-size: 1em;
+    color: dimgray;
+}
+
+#main-cube {
+    filter: opacity(0.2);
+    animation: cube-animation 4s ease-in-out infinite;
+}
+
+@keyframes cube-animation {
+    0% {
+        transform: translateX(-200px) translateY(-50px);
+    }
+    50% {
+        transform: translateX(-200px) translateY(-60px);
+    }
+    100% {
+        transform: translateX(-200px) translateY(-50px);
+    }
+}
