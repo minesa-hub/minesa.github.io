@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title of the page -->
+    <title>Zolusion Portfolio</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="neo.css" />
+
+    <!-- Script -->
+    <script src="neo.js" defer></script>
+</head>
+
+<body>
+    <!-- Creating gradient on top -->
+    <div id="header-gradient"></div>
+
+    <div class="blob-container">
+        <img class="blob" id="blob-1" src="../assets/icons/blob-1.svg" alt="">
+        <img class="blob" id="blob-2" src="../assets/icons/blob-2.svg" alt="">
+        <img class="blob" id="blob-3" src="../assets/icons/blob-3.svg" alt="">
+    </div>
+
+    <!-- Creating layout -->
+    <div class="relative">
+        <!-- Header • The logo & Navs-->
+        <header>
+            <!-- Logo -->
+            <div id="logo">
+                <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
+                    <img id="logo-image" src="../assets/images/minesa-hub.png" alt="Minesa Hub's logo" />
+                </a>
+
+                <!-- Navigations -->
+                <nav>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/frknbkll/" target="_blank" class="nav-items">
+                        <img src="../assets/icons/instagram.svg" alt="Twitter" />
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="https://github.com/Zolusion" target="_blank" class="nav-items">
+                        <img src="../assets/icons/discord.svg" alt="Discord" />
+                        <span>Discord</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero of the page -->
+        <main>
+            <!-- Badge container -->
+            <div id="badge-container">
+                <strong id="badge" data="Front-end"></strong>
+            </div>
+            <!-- Hero image's container -->
+            <div class="rounded-full">
+                <!-- My picture -->
+                <img id="neo-img" loading="lazy" src="../assets/images/zolusion.jpeg" alt="Neo" />
+            </div>
+
+            <!-- This is container for my username -->
+            <div id="neo-text-container">
+                <h1 id="neo-text">Furkan Baykal</h1>
+            </div>
+
+            <!-- This task I have -->
+            <div id="main-other-container">
+                <h2 id="task-text">Front-end Designer & Developer</h2>
+            </div>
+
+            <!-- Connections -->
+            <div class="connection-container">
+                <!-- Github -->
+                <div>
+                    <a href="https://github.com/Zolusion" target="_blank" style="text-decoration: none">
+                        <img src="../assets/icons/github.svg" alt="Github" class="connection-items" />
+                        <span class="connection-items">Zolusion</span>
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div>
+                    <a href="https://www.instagram.com/frknbkll/" target="_blank" style="text-decoration: none">
+                        <img src="../assets/icons/instagram.svg" alt="Twitter" class="connection-items" />
+                        <span class="connection-items">frknbkll</span>
+                    </a>
+                </div>
+                <!-- Discord -->
+                <div>
+                    <a href="https://discord.com/channels/@me" target="_blank" style="text-decoration: none">
+                        <img src="../assets/icons/discord.svg" alt="Twitter" class="connection-items" />
+                        <span class="connection-items">Obnoxius</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- The article & Sections -->
+        <article>
+            <!-- Horizontal line -->
+            <div class="relative">
+                <hr />
+            </div>
+
+            <!-- Button container -->
+            <div id="button-container">
+                <button class="article-buttons active" onclick="showSection(event, 'about-section')">
+                    About Me
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'project-section')">
+                    Projects
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'experience-section')">
+                    Experiences
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'education-section')">
+                    Education
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'internship-section')">
+                    Internship
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'contact-section')">
+                    Contact
+                </button>
+            </div>
+
+            <!-- Article: About -->
+            <div class="article-item" id="about-section">
+                <h1>Hey, It's me! 👋🏻</h1>
+                <p>
+                    I'm <strong>Furkan Baykal</strong>  25 years old Student that follows the education of 
+                    Software Development in The Netherlands. Passion for creating and designing with Front-End 
+                    <br>
+                </p>
+
+                <h1 class="article-header">Designing && Developing+ 💪🏻</h1>
+                <p>
+                    I have a strong passion for both technology and creativity. As a
+                    developer and designer, I am able to merge these two passions to
+                    create innovative and functional solutions. I have been coding for
+                    <strong>almost 3 years</strong> and continue to explore new technologies and
+                    techniques to further enhance my skills and abilities.
+                </p>
+
+                <h1 class="article-header">I'm a Delivery guy!</h1>
+                <p>
+                    As a delivery guy at the DHL, I love to give people their packages because I like to give people smile on their faces. Behalve of delivery i love to ride cars because i spend a lot of time on the roads. 
+                </p>
+                <br>
+                <ul id="article-ul">
+                    <li><strong>Machine:</strong> Visual Studio Code</li>
+                    <li><strong>Experience:</strong> 3 Years</li>
+                    <li><strong>Company:</strong> DHL</li>
+                </ul>
+            </div>
+
+            <!-- Article: Projects -->
+            <div class="article-item" id="project-section">
+                
+                <div class="project-item">
+                    <h3 class="project-platform" style="text-decoration: none; color: indianred;">Web Projects</h3>
+                    <hr style="margin: auto">
+                    <h1>Web Pages and Portfolios</h1>
+                    <h6 style="color:darkgray;margin-bottom: 0.4em">2022 - 2023</h6>
+                    <p>
+                        I'm focussing on learning WebGL and Three.js. Coding in 3D is a lot of fun. Designing and coding that is where I always 
+                        focussed on. But the backend is really tough for me to learn. I'm trying to learn it but it's really hard.
+                    </p>
+                    <br>
+                    <p>
+                        The best way to learn things is to be a part of a team and work on a project. I have my own Discord group where we are working 
+                        on a project that is called <strong>Okni Chat</strong> a chat application with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JS</strong>.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h1>Want to see my projects? 👀</h1>
+                    <p>
+                        If you want to check out my projects, don't hesitate to check my
+                        <a href="https://github.com/Zolusion?tab=repositories" target="_blank" style="text-decoration: underline;">GitHub repositories
+                        </a>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Article: Experience -->
+            <div class="article-item" id="experience-section">
+                <h1>Programming Languages 📣</h1>
+                <ul id="article-ul">
+                    <li><strong>JS · </strong>JavaScript</li>
+                </ul>
+                <hr>
+                <h1 class="article-header">Markdown Languages 📝</h1>
+                <ul id="article-ul">
+                    <li><strong>HTML · </strong>Hypertext Markup Language</li>
+                    <li><strong>CSS · </strong>Cascading Style Sheets</li>
+                    <li><strong>PHP · </strong>Hypertext Preprocessor</li>
+                </ul>
+                <hr>
+                <h1 class="article-header">Application Programming Interface 📝</h1>
+                <ul id="article-ul">
+                    <li><strong>WebGL · </strong>Web Graphics Library</li>
+                </ul>
+                <hr>
+                <h1 class="article-header">Tools 🔥</h1>
+                <ul id="article-ul">
+                    <li><strong>For Coding · </strong>Visual Studio Code</li>
+                    <li><strong>For Design · </strong>Figma</li>
+                </ul>
+            </div>
+
+            <!-- Article Education -->
+            <div class="article-item" id="education-section">
+                <h1>Education</h1>
+                <ul id="article-ul">
+                    <li><strong>VMBO · </strong>Noordrand College</li>
+                    <li><strong>MBO Level 2 · </strong>Logistics Employee</li>
+                    <li><strong>MBO Level 3 · </strong>Logistics Team Leader</li>
+                    <li><strong>MBO Level 4 · </strong>Logistics Manager</li>
+                    <li><strong>MBO Level 4 · </strong>Software Development</li>
+                </ul>
+                <hr>
+            </div>
+
+            <!-- Article Internship -->
+            <div class="article-item" id="internship-section">
+                <div class="project-item">
+                    <h3 class="project-platform" style="text-decoration: none; color: indianred;">Internship</h3>
+                    <hr style="margin: auto">
+                    <h1>ConfigWise</h1>
+                    <h6 style="color:darkgray;margin-bottom: 0.4em">07-06-2021 / 09-07-2021</h6>
+                    <p>
+                        Brings your work in life with AR Content. Improving your customer service to the top. A high quality 
+                        Interactive AR experience for your customers.
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://configwise.io/">https://configwise.io/</a>
+                    </p>
+                </div>
+                <hr>
+                <div class="project-item">
+                    <h3 class="project-platform" style="text-decoration: none; color: indianred;">Internship</h3>
+                    <hr style="margin: auto">
+                    <h1>360Fabriek</h1>
+                    <h6 style="color:darkgray;margin-bottom: 0.4em">21-10-2022 / 27-01-2023</h6>
+                    <p>
+                        Developing Virtual Reality to an another level with 360° videos and 360° photos.
+                        innovative and interactive 360° experiences with the latest technology. 
+                    </p>
+                    <li><strong>Virtual Productions · </strong>Photorealistic renders for various purposes</li>
+                    <li><strong>WebAR · </strong>Interactive experiences in the browser</li>
+                    <li><strong>VR/AR DEVELOPMENT · </strong>Endless possibilities through innovative means of communication</li>
+                    <li><strong>Virtual Productions · </strong>Photorealistic renders for various purposes</li>
+                    <li><strong>FILTERS · </strong>Offer more on your social media with filters</li>
+                    <li><strong>3D CONFIGURATORS · </strong>Full personalization of every product</li>
+                    <li><strong>3D MODELS · </strong>Photorealistic 3D models for digital applications</li>
+                    <li><strong>360° VIRTUELE TOURS · </strong>Interactively digitize your location or showroom</li>
+                    <br>
+                    <p>
+                        <a href="https://360fabriek.nl/">https://360fabriek.nl/</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Article: Contact -->
+            <div class="article-item" id="contact-section">
+                <h1>Contact me</h1>
+                <ul id="article-ul">
+                    <li><strong>E-mail · </strong><a href="mailto: furkanbaykal2014@hotmail.com">furkanbaykal2014@hotmail.com</a></li>
+                </ul>
+                <hr>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+        </footer>
+
+        <!-- Gradient for bottom -->
+        <div class="gradient-background" id="footer-gradient"></div>
+    </div>
+</body>
+
+</html>
