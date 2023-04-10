@@ -297,7 +297,10 @@ footer {
 /* About Section · The section about me */
 #about-section,
 #project-section,
-#experience-section {
+#experience-section,
+#education-section, 
+#internship-section, 
+#contract-section {
     display: flex;
     flex-direction: column;
 
@@ -309,7 +312,10 @@ footer {
 
 /* Hiding project & experience at the load of page */
 #project-section,
-#experience-section {
+#experience-section, 
+#education-section, 
+#internship-section, 
+#contract-section {
     display: none;
 }
 
