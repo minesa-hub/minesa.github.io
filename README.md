@@ -1,2 +1,3 @@
-# Neo-folio
-My simple portfolio.
+# Minesa Hub
+
+This is our team.
