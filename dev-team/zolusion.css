@@ -35,12 +35,20 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, var(--red-color), var(--orange-color));
+    background: linear-gradient(
+        to bottom,
+        var(--red-color),
+        var(--orange-color)
+    );
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, var(--red-color), var(--purple-color));
+    background: linear-gradient(
+        to bottom,
+        var(--red-color),
+        var(--purple-color)
+    );
 }
 
 /* Apply on everything */
@@ -162,7 +170,11 @@ footer {
     /* 4px */
     max-width: 100%;
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
+    background: linear-gradient(
+        to right,
+        var(--orange-color),
+        var(--red-color)
+    );
 }
 
 /* Logo · Logo's container */
@@ -211,7 +223,11 @@ footer {
 
     z-index: -2;
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
+    background: linear-gradient(
+        to right,
+        var(--orange-color),
+        var(--red-color)
+    );
 }
 
 /* Badge::before */
@@ -241,7 +257,11 @@ footer {
     line-height: 1.25em;
     font-family: var(--hubot-font);
 
-    background: linear-gradient(to right, var(--orange-color), var(--red-color));
+    background: linear-gradient(
+        to right,
+        var(--orange-color),
+        var(--red-color)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -298,8 +318,8 @@ footer {
 #about-section,
 #project-section,
 #experience-section,
-#education-section, 
-#internship-section, 
+#education-section,
+#internship-section,
 #contact-section {
     display: flex;
     flex-direction: column;
@@ -312,9 +332,9 @@ footer {
 
 /* Hiding project & experience at the load of page */
 #project-section,
-#experience-section, 
-#education-section, 
-#internship-section, 
+#experience-section,
+#education-section,
+#internship-section,
 #contact-section {
     display: none;
 }
@@ -328,7 +348,6 @@ footer {
 
 /* #2 blob */
 #blob-2 {
-
     top: 10em;
     left: 20em;
 
@@ -356,7 +375,11 @@ footer {
     /* 4px */
     max-width: 100%;
 
-    background: linear-gradient(to right, var(--red-color), var(--purple-color));
+    background: linear-gradient(
+        to right,
+        var(--red-color),
+        var(--purple-color)
+    );
 }
 
 /* -------------------------------------- */
@@ -501,7 +524,12 @@ footer {
     border: 1px solid var(--dimmed-background);
 
     color: var(--dimmed-background);
-    background: linear-gradient(75deg, var(--purple-color), var(--red-color), var(--orange-color));
+    background: linear-gradient(
+        75deg,
+        var(--purple-color),
+        var(--red-color),
+        var(--orange-color)
+    );
     background-size: 200% 200%;
 
     animation: project-animation 3s ease-in-out infinite;
