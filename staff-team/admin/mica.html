@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title of the page -->
+    <title>Minesa Team: Mica</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="mica.css" />
+
+    <!-- Script -->
+    <script src="../../index.js" defer></script>
+</head>
+
+<body>
+    <!-- Creating gradient on top -->
+    <div id="header-gradient"></div>
+
+    <div class="blob-container">
+        <img class="blob" id="blob-1" src="../../assets/icons/blob-1.svg" alt="">
+        <img class="blob" id="blob-2" src="../../assets/icons/blob-2.svg" alt="">
+        <img class="blob" id="blob-3" src="../../assets/icons/blob-3.svg" alt="">
+    </div>
+
+    <!-- Creating layout -->
+    <div class="relative">
+        <!-- Header • The logo & Navs-->
+        <header>
+            <!-- Logo -->
+            <div id="logo">
+                <a aria-label="Home" href="/" id="logo-link" class="rounded-full">
+                    <img id="logo-image" src="../../assets/images/minesa-hub.png" alt="Minesa Hub's logo" />
+                </a>
+
+                <!-- Navigations -->
+                <nav>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/1828Mich" target="_blank" class="nav-items">
+                        <img src="../../assets/icons/twitter.svg" alt="Twitter" />
+                        <span>Twitter</span>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="https://discord.gg/Q8aTPfeNra" target="_blank" class="nav-items">
+                        <img src="../../assets/icons/discord.svg" alt="Discord" />
+                        <span>Discord</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero of the page -->
+        <main>
+            <!-- Badge container -->
+            <div id="badge-container">
+                <strong id="badge" data="co-owner"></strong>
+            </div>
+            <!-- Hero image's container -->
+            <div class="rounded-full">
+                <!-- My picture -->
+                <img id="mica-img" loading="lazy" src="../../assets/images/micha.jpg" alt="Micha" />
+            </div>
+
+            <!-- This is container for my username -->
+            <div id="mica-text-container">
+                <h1 id="mica-text">Mica</h1>
+            </div>
+
+            <!-- This task I have -->
+            <div id="main-other-container">
+                <h2 id="task-text">Artist</h2>
+            </div>
+
+            <!-- Connections -->
+            <div class="connection-container">
+                <!-- Github -->
+                <div>
+                    <a href="https://github.com/michii18" target="_blank" style="text-decoration: none">
+                        <img src="../../assets/icons/github.svg" alt="Github" class="connection-items" />
+                        <span class="connection-items">michii18</span>
+                    </a>
+                </div>
+
+                <!-- Twitter -->
+                <div>
+                    <a href="https://twitter.com/1828Mich" target="_blank" style="text-decoration: none">
+                        <img src="../../assets/icons/twitter-blue.svg" alt="Twitter" class="connection-items" />
+                        <span class="connection-items">@1828Mich</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- The article & Sections -->
+        <article>
+            <!-- Horizontal line -->
+            <div class="relative">
+                <hr />
+            </div>
+
+            <!-- Button container -->
+            <div id="button-container">
+                <button class="article-buttons active" onclick="showSection(event, 'about-section')">
+                    About Me
+                </button>
+                <button class="article-buttons" onclick="showSection(event, 'experience-section')">
+                    Experiences
+                </button>
+            </div>
+
+            <!-- Article: About -->
+            <div class="article-item" id="about-section">
+                <h1>Hello, there! 🙏🏻</h1>
+                <p>
+                    I'm <strong>Mica</strong> and I'm 16 years old. I'm a Senior High School student.
+                    <br>
+                    <em>
+                        Neo's girlfriend and co-owner of Minesa Hub.
+                    </em>
+                    ❤️
+                </p>
+
+                <h1 class="article-header">Academic Excellence 🎊</h1>
+                <p>
+                   I take pride in my academic achievements, having excelled in various subjects throughout my schooling years. 
+                   My passion for learning started early on, and I was the best in Science, Math, English, and Filipino during my kindergarten days. 
+                   In elementary school, I was recognized as the best student of the year and continued to excel in English. 
+                   In high school, I was awarded for my proficiency in English, Science, History, and MAPEH. 
+                   I am also proud to have received the artist of the year award during my high school years.
+                </p>
+
+                <h1 class="article-header">Hobbies ✨</h1>
+                <p>
+                    In my free time, I enjoy various hobbies, including listening to music, writing poems, singing, drawing, and spending time with my loved ones. 
+                    My partner, Neo, is particularly special to me, and I cherish every moment we spend together.
+                    <br>
+                    <br>
+                    Overall, I am a well-rounded individual who takes pride in my achievements, but also continues to learn and grow in all aspects of life.
+                </p>
+            </div>
+
+            <!-- Article: Experience -->
+            <div class="article-item" id="experience-section">
+                <h1>Artist 🎨</h1>
+                <ul id="article-ul">
+                    <li>Digital Art</li>
+                    <li>Pencil Drawing</li>
+                </ul>
+                <hr>
+
+                <h1 class="article-header">Tools 🔥</h1>
+                <ul id="article-ul">
+                    <li><strong>For Digital Art · </strong>Ibis Paint</li>
+                </ul>
+        </article>
+
+        <!-- Footer -->
+        <footer>
+        </footer>
+
+        <!-- Gradient for bottom -->
+        <div class="gradient-background" id="footer-gradient"></div>
+    </div>
+</body>
+
+</html>
