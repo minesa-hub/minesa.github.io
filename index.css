@@ -28,11 +28,19 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, var(--red-color), var(--orange-color));
+    background: linear-gradient(
+        to bottom,
+        var(--red-color),
+        var(--orange-color)
+    );
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, var(--red-color), var(--purple-color));
+    background: linear-gradient(
+        to bottom,
+        var(--red-color),
+        var(--purple-color)
+    );
 }
 
 * {
@@ -47,7 +55,12 @@
 
 #header-gradient {
     height: 0.25em;
-    background: linear-gradient(to right, var(--orange-color), var(--red-color), var(--purple-color));
+    background: linear-gradient(
+        to right,
+        var(--orange-color),
+        var(--red-color),
+        var(--purple-color)
+    );
     background-size: 200% 200%;
     animation: header-animation 3s ease-in-out infinite;
 }
@@ -67,7 +80,6 @@
 }
 
 header {
-    
     display: flex;
     padding: 0.5em;
     justify-content: center;
@@ -78,14 +90,14 @@ header img {
     margin: auto;
     height: 4.125em;
     width: 4.125em;
-    filter: opacity(0.9)
+    filter: opacity(0.9);
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     flex-direction: column;
 }
 
@@ -105,7 +117,7 @@ main h2 {
     display: flex;
     color: black;
     font-family: var(--mona-font);
-    padding-top: .5em;
+    padding-top: 0.5em;
     font-size: 1em;
     color: dimgray;
 }
