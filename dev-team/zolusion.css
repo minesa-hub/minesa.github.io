@@ -277,7 +277,7 @@ footer {
 
     height: 10.375em;
     width: 10.375em;
-    filter: grayscale(0.3);
+    filter: grayscale(1);
 }
 
 /* Neo Text Container · A div for my username */
