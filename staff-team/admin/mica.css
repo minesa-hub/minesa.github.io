@@ -1,13 +1,13 @@
 /* Hubot Sans */
 @font-face {
     font-family: "Hubot-Sans";
-    src: url("../assets/fonts/Hubot-Sans.woff2") format("woff");
+    src: url("../../assets/fonts/Hubot-Sans.woff2") format("woff");
 }
 
 /* Mona Sans */
 @font-face {
     font-family: "Mona-Sans";
-    src: url("../assets/fonts/Mona-Sans.woff2") format("woff");
+    src: url("../../assets/fonts/Mona-Sans.woff2") format("woff");
 }
 
 /* Variables */
