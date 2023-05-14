@@ -110,7 +110,7 @@ main h1 {
     display: flex;
     color: black;
     font-family: var(--hubot-font);
-    font-size: 4.5em;
+    font-size: 4.0em;
     line-height: 1em;
     background: linear-gradient(75deg, var(--purple-color), var(--red-color));
     background-clip: text;
