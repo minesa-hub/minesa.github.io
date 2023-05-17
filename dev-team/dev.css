@@ -267,8 +267,8 @@ footer {
     color: transparent;
 }
 
-/* Neo Image · Image of myself, for editing it */
-#neo-img {
+/* user Image · Image of myself, for editing it */
+#user-img {
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -277,16 +277,15 @@ footer {
 
     height: 10.375em;
     width: 10.375em;
-    filter: grayscale(1);
 }
 
-/* Neo Text Container · A div for my username */
-#neo-text-container {
+/* user Text Container · A div for my username */
+#user-text-container {
     margin-top: 1em;
 }
 
-/* Neo Text · The text displays my username  */
-#neo-text {
+/* user Text · The text displays my username  */
+#user-text {
     font-size: 1.8em;
     line-height: 2.25em;
 
@@ -569,15 +568,15 @@ footer {
 /* Blob animations */
 @keyframes blob-animation {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(-80%);
     }
 
     50% {
-        transform: translateX(-100px) rotate(-180deg);
+        transform: translateX(-90px) rotate(-270deg);
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-80%);
     }
 }
 
