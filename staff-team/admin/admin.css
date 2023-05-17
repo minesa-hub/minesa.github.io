@@ -267,8 +267,8 @@ footer {
     color: transparent;
 }
 
-/* Neo Image · Image of myself, for editing it */
-#neo-img {
+/* user Image · Image of myself, for editing it */
+#user-img {
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -280,13 +280,13 @@ footer {
     filter: grayscale(0.3);
 }
 
-/* Neo Text Container · A div for my username */
-#neo-text-container {
+/* user Text Container · A div for my username */
+#user-text-container {
     margin-top: 1em;
 }
 
-/* Neo Text · The text displays my username  */
-#neo-text {
+/* user Text · The text displays my username  */
+#user-text {
     font-size: 1.8em;
     line-height: 2.25em;
 
