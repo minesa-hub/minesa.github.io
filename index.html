@@ -29,6 +29,26 @@
 
     <body>
         <div id="header-gradient"></div>
+        <div class="blob-container">
+            <img
+                class="blob"
+                id="blob-1"
+                src="./assets/icons/blob-1.svg"
+                alt=""
+            />
+            <img
+                class="blob"
+                id="blob-2"
+                src="./assets/icons/blob-2.svg"
+                alt=""
+            />
+            <img
+                class="blob"
+                id="blob-3"
+                src="./assets/icons/blob-3.svg"
+                alt=""
+            />
+        </div>
         <div class="relative">
             <header>
                 <img
@@ -49,36 +69,57 @@
                     style="height: 10em; width: 100%"
                 />
             </div>
+
             <main>
                 <h1>Minesa Hub</h1>
                 <h2>A place for everyone!</h2>
+                <div class="glass" id="about-us">
+                    <p>
+                        <strong>Minesa Hub</strong> is a vibrant and inclusive
+                        community dedicated to programming and problem-solving.
+                        <br />
+                        Our organization understands the challenges that
+                        individuals face when it comes to homework assignments
+                        and complex programming projects. We strive to provide a
+                        supportive environment where members can enhance their
+                        skills, collaborate, and build lasting relationships.
+                    </p>
+                </div>
                 <img id="main-cube" src="./assets/icons/cube.svg" alt="" />
             </main>
 
+            <nav>
+                <a href="#about-us">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Our Team</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+
             <article>
-                <h1 id="article-header">
+                <h1 class="article-title">
                     <img src="./assets/icons/people.svg" alt="people" />
                     <span>Team</span>
                 </h1>
-                <div class="team">
+
+                <div id="team">
                     <a href="./staff-team/admin/mica.html">
                         <div class="team-member">
                             <img src="./assets/images/mica.jpg" alt="Mica" />
-                            <h3>Mica</h3>
+                            <h3><span id="mi">mi</span>ca</h3>
                             <span class="badge inner">Co-owner</span>
                         </div>
                     </a>
                     <a href="./staff-team/admin/neo.html"
                         ><div class="team-member">
                             <img src="./assets/images/neo.jpg" alt="Neo" />
-                            <h3>Neo</h3>
+                            <h3><span id="ne">ne</span>o</h3>
                             <span class="badge">Owner</span>
                         </div>
                     </a>
                     <a href="./staff-team/admin/saku.html"
                         ><div class="team-member">
                             <img src="./assets/images/saku.jpg" alt="Saku" />
-                            <h3>Saku</h3>
+                            <h3><span id="sa">sa</span>ku</h3>
                             <span class="badge">Co-owner</span>
                         </div>
                     </a>
