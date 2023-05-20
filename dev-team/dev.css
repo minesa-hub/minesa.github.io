@@ -537,6 +537,7 @@ footer {
 /* When hovering project embed */
 .project-item:hover {
     transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 /* Project platforms aka tags */

@@ -66,6 +66,25 @@ a {
     color: inherit;
 }
 
+hr {
+    margin: 1em 0;
+
+    width: 90%;
+
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+#vertical-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vertical-line > img {
+    height: 10em;
+    width: 100%;
+}
+
 .blob-container {
     position: absolute;
     z-index: -1;
@@ -100,6 +119,15 @@ a {
 #blob-3 {
     top: -20em;
     left: 30em;
+
+    animation: blob-animation 1s ease-in-out forwards;
+}
+
+#blob-4 {
+    top: 15em;
+    right: 10em;
+    width: 50%;
+    height: 50%;
 
     animation: blob-animation 1s ease-in-out forwards;
 }
@@ -180,6 +208,7 @@ nav {
 
     background-color: #ffffffe6;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 
     z-index: 10;
 
@@ -220,8 +249,8 @@ main h1 {
     font-size: 4em;
     line-height: 1em;
     background: linear-gradient(75deg, var(--purple-color), var(--red-color));
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -249,6 +278,7 @@ main h2 {
     margin: 0.5em;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
@@ -286,7 +316,7 @@ article {
 }
 
 article h3 {
-    margin: 0.5em;
+    margin: 0.5em 0;
     display: flex;
     font-family: var(--mona-font);
     font-size: 2em;
@@ -361,22 +391,27 @@ article img {
 
 .badge {
     display: inline-block;
-    font-size: 0.8em;
-    font-weight: 600;
-    padding: 0.3em 0.6em;
+
     border-radius: 2em;
-    color: black;
-    line-height: 18px;
-    white-space: nowrap;
-    border: 2px solid black;
 
     margin: 0.5em;
-
-    font-family: var(--hubot-font);
-
     padding: 0.12em 0.5em;
 
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 18px;
+    white-space: nowrap;
     font-family: var(--mona-font);
+}
+
+.admin-badge {
+    border: 2px solid #ff7a71;
+    color: #ff7a71;
+}
+
+.member-badge {
+    border: 2px solid #9867f0;
+    color: #9867f0;
 }
 
 @keyframes cube-animation {
