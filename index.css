@@ -391,22 +391,27 @@ article img {
 
 .badge {
     display: inline-block;
-    font-size: 0.8em;
-    font-weight: 600;
-    padding: 0.3em 0.6em;
+
     border-radius: 2em;
-    color: black;
-    line-height: 18px;
-    white-space: nowrap;
-    border: 2px solid black;
 
     margin: 0.5em;
-
-    font-family: var(--hubot-font);
-
     padding: 0.12em 0.5em;
 
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 18px;
+    white-space: nowrap;
     font-family: var(--mona-font);
+}
+
+.admin-badge {
+    border: 2px solid #ff7a71;
+    color: #ff7a71;
+}
+
+.member-badge {
+    border: 2px solid #9867f0;
+    color: #9867f0;
 }
 
 @keyframes cube-animation {
