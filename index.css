@@ -226,7 +226,8 @@ nav {
 
 nav > a {
     display: inline-flex;
-
+    justify-content: space-between;
+    margin: 0 4.5em;
     padding: 0.5em 1em;
 
     transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s;
@@ -345,22 +346,6 @@ article img {
     border-radius: 50%;
 }
 
-[alt="project-roadmap"] {
-    height: 1.5em;
-    width: 1.5em;
-    margin-right: 0.2em;
-
-    border-radius: 0%;
-}
-
-[alt="people"] {
-    height: 2em;
-    width: 2em;
-    margin-right: 0.2em;
-
-    border-radius: 0%;
-}
-
 #team {
     display: flex;
     justify-content: center;
@@ -385,6 +370,22 @@ article img {
     transition: transform 500ms ease-in-out;
 }
 
+[alt="project-roadmap"] {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 0.2em;
+
+    border-radius: 0%;
+}
+
+[alt="people"] {
+    height: 2em;
+    width: 2em;
+    margin-right: 0.2em;
+
+    border-radius: 0%;
+}
+
 .team-member:hover {
     transform: translateY(-15px);
 }
@@ -404,9 +405,23 @@ article img {
     font-family: var(--mona-font);
 }
 
+[alt="admin-badge"] {
+    height: 1em;
+    width: 1em;
+    margin-right: 0.2em;
+    border-radius: 0%;
+    vertical-align: middle;
+    filter: grayscale(0);
+}
+
 .admin-badge {
     border: 2px solid #ff7a71;
     color: #ff7a71;
+}
+
+.maintainer-badge {
+    border: 2px solid #ff9f43;
+    color: #ff9f43;
 }
 
 .member-badge {
