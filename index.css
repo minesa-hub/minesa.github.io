@@ -292,26 +292,31 @@ main h2 {
     color: dimgray;
     z-index: 2;
 }
-
 article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1em;
-
     margin: 1em;
     border-radius: 10px;
+}
+
+article#projects {
+    background: #e3e3e3;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+article#team {
     background: var(--dimmed-background);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.article-title {
+article > h1 {
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    color: rgb(172, 172, 172);
     font-family: var(--mona-font);
     font-size: 2.5em;
 }
@@ -323,6 +328,48 @@ article h3 {
     font-size: 2em;
     line-height: 1em;
     color: black;
+}
+
+article > h1#project-title {
+    color: rgb(0, 0, 0);
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    min-width: 300px;
+    border: 3px dashed var(--dimmed-background);
+    background: linear-gradient(75deg, #85ffff, #ff85ff);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.project-item:hover {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.9);
+    transform: translate3d(-5px, -5px, 0);
+    filter: hue-rotate(560deg);
+}
+
+.project-item > h3 {
+    font-family: var(--hubot-font);
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.project-item > p {
+    font-family: var(--mona-font);
+    font-weight: 400;
+    font-style: italic;
+}
+
+article > h1#team-title {
+    color: rgb(172, 172, 172);
 }
 
 #mi {
